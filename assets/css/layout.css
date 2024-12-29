@@ -1,0 +1,197 @@
+@import './reset.css';
+@import './common.css';
+
+
+/* Header */
+#header {
+  position: relative;
+  width: 1280px;
+  height: 215px;
+  padding-top: 52px;
+  margin: 0 auto;
+}
+
+#header .group-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header / search-area */
+#header .search-area {
+  display: flex;
+  width: 706px;
+  border: 1px solid #03c75a;
+  border-radius: 33px;
+  background-color: #fff;
+}
+#header .search-area h1 a {
+  display: block;
+  padding: 17px 16px 17px 27px;
+}
+#header .search-area h1 svg {
+  width: 24px;
+  fill: #03c75a;
+}
+#header .search-area .search-form {
+  flex: 1;
+}
+#header .search-area .search-inner {
+  display: flex;
+  height: 58px;
+}
+#header .search-area .input-text {
+  flex: 1;
+  border: none;
+  color: #000;
+  color: var(--color_search);
+  font-size: 2rem;
+  line-height: 24px;
+  font-weight: bold;
+  outline: 0;
+}
+#header .search-area .input-text::placeholder{
+  color: #e3e5e8;
+  font-weight: normal;
+}
+#header .search-area .btn-keyboard {
+  padding: 22px 3px;
+}
+#header .search-area .btn-keyboard::before {
+  display: block;
+  width: 24px;
+  height: 14px;
+  content: '';
+  background-position: -123px -301px;
+}
+#header .search-area .btn-auto {
+  padding: 26px 6px;
+}
+#header .search-area .btn-auto::before {
+  display: block;
+  width: 10px;
+  height: 6px;
+  content: '';
+  background-position: -221px -184px;
+}
+#header .search-area .btn-submit {
+  padding: 17px 27px 16px 10px;
+}
+#header .search-area .btn-submit svg {
+  width: 25px;
+}
+/* //Header / search-area */
+
+/* Header / nav-area */
+#header .nav-area{
+    margin-top: 8px;
+    width: 676px;
+}
+#header .nav-area .nav-list{
+    display: flex;
+}
+#header .nav-area .nav-item{
+    width: 64px;
+}
+#header .nav-area .link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+#header .nav-area .icon{
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+#header .nav-area .icon::before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    background-position: -153px -142px;
+    width: 50px;
+    height: 50px;
+}
+#header .nav-area .icon::after{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+content: '';
+width: 40px;
+height: 40px;
+}
+#header .nav-area .ic-mail::after{
+    background-position: -205px -219px;
+}
+#header .nav-area .ic-cafe::after{
+    background-position: -41px -219px;
+}
+#header .nav-area .ic-blog::after{
+  background-position: 0px -219px;
+}
+#header .nav-area .ic-shopping::after{
+  background-position: -41px -260px;
+}
+#header .nav-area .ic-news::after{
+  background-position: -270px -205px;
+}
+#header .nav-area .ic-stock::after{
+  background-position: -123px -260px;
+}
+#header .nav-area .ic-estate::after{
+  background-position: 0px -260px;
+}
+#header .nav-area .ic-location::after{
+  background-position: -270px 0px;
+}
+#header .nav-area .ic-webtoon::after{
+  background-position: -164px -260px;
+}
+#header .nav-area .ic-service::after{
+    background-image: url(../images/ic-service.png);
+    background-size: 40px 40px;
+}
+#header .nav-area .ic-more::after{
+  background-position: -270px -123px;
+}
+/* // Header / nav-area */
+
+/* Header / util-area */
+#header .util-area {
+  display: flex;
+  position: absolute;
+  top: 5px;
+}
+#header .util-area.left {
+  left: -12px;
+}
+#header .util-area.right {
+  right: -10px;
+}
+#header .util-area [class*='btn-'] {
+  padding: 8px;
+}
+#header .util-area [class*='btn-']::before {
+  width: 32px;
+  height: 32px;
+  display: block;
+  content: '';
+}
+#header .util-area .btn-menu::before {
+  background-position: -311px -166px;
+}
+#header .util-area .btn-pay::before {
+  background-position: -248px -260px;
+}
+#header .util-area .btn-talk::before {
+  background-position: -99px -316px;
+}
+#header .util-area .btn-alert::before {
+  background-position: -311px -232px;
+}
+#header .util-area .btn-cart::before {
+  background-position: -33px -316px;
+}
+/* // Header / util-area */

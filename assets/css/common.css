@@ -1,0 +1,90 @@
+#wrap{
+    min-width: 1340px;
+}
+
+/* skipNav */
+#skipNav{
+    position: relative;
+}
+#skipNav a{
+    position: absolute;
+    white-space: nowrap;
+    background-color: #000;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    transform: translateY(-110%);
+    z-index: 99;
+}
+#skipNav a:focus,
+#skipNav a:active{
+    transform: translateY(0);
+}
+/* // skipNav */
+
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+
+/* sprite img set */
+#header .util-area [class*="btn-"]::before,
+#header .search-area .btn-keyboard::before,
+#header .search-area .btn-auto::before,
+#header .nav-area .icon::before,
+#header .nav-area .icon::after,
+.sc-news .group-issue .btn-all::after,
+.sc-login .link-login::before,
+.sc-news .group-control .btn.prev::before,
+.sc-news .group-control .btn.next::before,
+.sc-news .group-control .view-area .btn-list::before,
+.sc-news .group-control .view-area .btn-thumb::before,
+.sc-contents .group-view .recipe-area .btn.swiper-button-next::before,
+.sc-contents .group-view .recipe-area .btn.swiper-button-prev::before,
+.sc-weather .group-head .link-compare::before,
+.sc-stock .group-head .btn-info::before,
+.sc-stock .group-head .btn-reset::before,
+.sc-stock .group-view .chart-area .variation::before,
+.sc-stock .group-view .list-area .variation.down::before,
+.sc-stock .group-view .list-area .variation.up::before,
+.sc-stock .group-view .list-area .popular-item a::after,
+.sc-widjet .group-vibe .head-area h3::before,
+.sc-widjet .group-vibe .head-area .link-recommend::after,
+.sc-widjet .group-vibe .head-area .link-recommend:hover::after,
+.sc-widjet .group-vibe .ic-play::before,
+.sc-widjet .link-mobile em::before,
+.sc-widjet .link-mobile::after,
+#footer .notice-area .link-service::after
+{
+    background-image: url(../images/sp1.png);
+    background-size: 463px auto;
+    background-repeat: no-repeat;
+}
+
+.sc-shopping .group-view .quick-area .icon.ic-my::before,
+.sc-shopping .group-view .quick-area .icon.ic-review::before,
+.sc-shopping .group-view .quick-area .icon.ic-order::before,
+.sc-shopping .group-view .quick-area .icon.ic-cart::before,
+.sc-shopping .group-control.bottom .btn.prev::before,
+.sc-shopping .group-control.bottom .btn.next::before   {
+    background-image: url(../images/sp2.png);
+    background-size: 158px auto;
+    background-repeat: no-repeat;
+}
+
+.sc-weather .current-area .ic-weather::before,
+.sc-weather .today-area .weather-item .ic-weather::before,
+.sc-weather .today-area .weather-item:nth-child(3) .ic-weather::before,
+.sc-weather .today-area .weather-item:nth-child(5) .ic-weather::before{
+    background-image: url(../images/sp3.png);
+    background-size: 641px 587px;
+    background-repeat: no-repeat;
+}
+/* // sprite img set */
